@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="bean"
+            type="com.yinghai.a24divine_user.bean.AddressListBean.DataBean.AddressBean" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_bg_ripple_white">
+
+            <ImageView
+                android:id="@+id/iv_chooose"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_left_half_conner_bg"
+                android:clickable="true" />
+
+            <com.example.fansonlib.widget.textview.TextViewDrawable
+                android:id="@+id/td_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/iv_chooose"
+                android:layout_toRightOf="@+id/iv_chooose"
+                android:drawablePadding="10dp"
+                android:text="@{bean.asConsigneeName}"
+                android:textSize="16sp"
+                app:cit_drawableLeft="@mipmap/ic_address_person"
+                app:cit_iconColor="@color/primary"
+                app:cit_iconHeight="10dp"
+                app:cit_iconWidth="10dp" />
+
+            <com.example.fansonlib.widget.textview.TextViewDrawable
+                android:id="@+id/td_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/td_name"
+                android:layout_alignStart="@+id/td_name"
+                android:layout_below="@+id/td_name"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:drawablePadding="10dp"
+                android:textSize="16sp"
+                app:cit_drawableLeft="@mipmap/icon_phone"
+                app:cit_iconColor="@color/primary"
+                app:cit_iconHeight="10dp"
+                app:cit_iconWidth="10dp"
+                android:text="@{bean.asTel}"
+                />
+
+            <com.example.fansonlib.widget.textview.TextViewDrawable
+                android:id="@+id/td_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/td_name"
+                android:layout_alignStart="@+id/td_name"
+                android:layout_below="@+id/td_phone"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="10dp"
+                android:textSize="16sp"
+                app:cit_drawableLeft="@mipmap/ic_address"
+                app:cit_iconColor="@color/primary"
+                app:cit_iconHeight="10dp"
+                app:cit_iconWidth="10dp"
+                android:text="@{bean.asStreet+bean.asDetails}"/>
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/iv_delete"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/iv_delete"
+                android:layout_toStartOf="@+id/iv_delete"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_edit_address"
+                android:tint="@color/grey_dark" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/td_name"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_del"
+                android:tint="@color/grey_dark" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

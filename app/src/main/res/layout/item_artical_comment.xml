@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="bean"
+            type="com.yinghai.a24divine_user.bean.CommentBean.DataBean.CommentsBean"/>
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/rootView"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_user_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:src="@mipmap/ic_more"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_toRightOf="@+id/iv_user_photo"
+            android:layout_toEndOf="@+id/iv_user_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bean.nick}"
+            />
+
+        <TextView
+            android:id="@+id/tv_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bean.ctCreateTime}"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_toRightOf="@+id/iv_user_photo"
+            android:layout_toEndOf="@+id/iv_user_photo" />
+
+        <TextView
+            android:id="@+id/tv_comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bean.ctContent}"
+            android:layout_below="@+id/tv_comment_time"
+            android:layout_toRightOf="@+id/iv_user_photo"
+            android:layout_toEndOf="@+id/iv_user_photo" />
+
+    </RelativeLayout>
+</layout>

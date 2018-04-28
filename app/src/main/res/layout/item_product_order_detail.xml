@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@color/bg">
+
+
+    <com.example.fansonlib.widget.textview.TextViewDrawable
+        android:id="@+id/linear_star"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/book_order_star_bg"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="@string/product_info"
+        android:textColor="@color/white_selected"
+        android:textSize="8sp"
+        app:cit_drawableLeft="@mipmap/ic_five_star"
+        app:cit_iconHeight="10dp"
+        app:cit_iconWidth="10dp" />
+
+    <TextView
+        android:id="@+id/tv_time_tip"
+        style="@style/orderDetailInfoTextTipStyle"
+        android:layout_below="@+id/linear_star"
+        android:text="@string/product_name" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        style="@style/orderDetailInfoTextStyle"
+        android:layout_below="@+id/linear_star"
+        android:layout_toRightOf="@+id/tv_time_tip"
+        tools:text="2017 年" />
+
+    <TextView
+        android:id="@+id/tv_type_tip"
+        style="@style/orderDetailInfoTextTipStyle"
+        android:layout_below="@+id/tv_time_tip"
+        android:text="@string/product_num" />
+
+    <TextView
+        android:id="@+id/tv_Product_num"
+        style="@style/orderDetailInfoTextStyle"
+        android:layout_below="@+id/tv_time_tip"
+        android:layout_toRightOf="@+id/tv_time_tip"
+        tools:text="2017 年" />
+
+    <TextView
+        android:id="@+id/tv_price_tip"
+        style="@style/orderDetailInfoTextTipStyle"
+        android:layout_below="@+id/tv_type_tip"
+        android:text="@string/product_amount" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/orderDetailInfoTextStyle"
+        android:layout_below="@+id/tv_type_tip"
+        android:layout_toRightOf="@+id/tv_time_tip"
+        tools:text="2017 年" />
+
+    <TextView
+        android:id="@+id/tv_name_tip"
+        style="@style/orderDetailInfoTextTipStyle"
+        android:layout_below="@+id/tv_price_tip"
+        android:text="@string/master_name" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/orderDetailInfoTextStyle"
+        android:layout_below="@+id/tv_price_tip"
+        android:layout_toRightOf="@+id/tv_name_tip"
+        tools:text="2017 年" />
+
+</RelativeLayout>

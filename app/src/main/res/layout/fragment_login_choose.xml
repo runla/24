@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_login_bg"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="horizontal">
+
+    <com.yinghai.a24divine_user.widget.NoteView
+        android:id="@+id/note_phone_login"
+        android:layout_width="65dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:note_backgroundDrawable="@drawable/note_blue_bg"
+        app:note_iamgeHeight="30dp"
+        app:note_iconColor="@color/white"
+        app:note_imageSrc="@mipmap/icon_phone_white"
+        app:note_marginHorizontal="10dp"
+        app:note_marginVertical="30dp"
+        app:note_textColor="@color/white"
+        app:note_textContent="@string/string_phone_login"
+        app:note_textSize="25sp"
+        app:note_textToImage="20dp"
+        app:note_turn="top"/>
+
+    <com.yinghai.a24divine_user.widget.NoteView
+        android:id="@+id/note_wechat_login"
+        android:layout_width="65dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:note_backgroundDrawable="@drawable/note_pink_bg"
+        app:note_iamgeHeight="30dp"
+        app:note_iconColor="@color/white"
+        app:note_imageSrc="@mipmap/icon_wechat"
+        app:note_marginHorizontal="10dp"
+        app:note_marginVertical="30dp"
+        app:note_textColor="@color/white"
+        app:note_textContent="@string/string_wechat_login"
+        app:note_textSize="25sp"
+        app:note_textToImage="20dp"
+        app:note_turn="top"/>
+
+    <com.yinghai.a24divine_user.widget.NoteView
+        android:id="@+id/note_facebook_login"
+        android:layout_width="65dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:note_backgroundDrawable="@drawable/note_facebook_bg"
+        app:note_iamgeHeight="30dp"
+        app:note_iconColor="@color/white"
+        app:note_imageSrc="@mipmap/ic_facebook"
+        app:note_marginHorizontal="10dp"
+        app:note_marginVertical="30dp"
+        app:note_textColor="@color/white"
+        app:note_textContent="@string/facebook_login"
+        app:note_textSize="25sp"
+        app:note_textToImage="20dp"
+        app:note_turn="top"/>
+
+</LinearLayout>

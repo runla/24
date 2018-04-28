@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problem">提问</string>
+    <string name="end_connect">结束通话</string>
+    <string name="dialog_ask">提问</string>
+    <string name="me">我</string>
+    <string name="request_video_permission">申请视频通话的权限</string>
+    <string name="request_video_no_permission">没有视频通话所需权限，视频通话无法进行</string>
+    <string name="no_float_permission">未获取到显示浮动窗口权限，是否退出当前聊天</string>
+    <string name="picture">图片</string>
+    <string name="no_float_window_permission">悬浮窗被禁用，无权限开启悬浮窗，请前往:设置 -> 应用管理 -> 24占-用户端 -> 在其他应用的上层显示</string>
+
+</resources>

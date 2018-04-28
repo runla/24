@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_bg_ripple_white">
+
+        <com.example.fansonlib.widget.textview.TextViewDrawable
+            android:id="@+id/linear_star"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@color/primary"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="@string/article"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:cit_drawableLeft="@mipmap/ic_article_label"
+            app:cit_iconHeight="10dp"
+            app:cit_iconWidth="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_article_photo"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/linear_star"
+            android:layout_toRightOf="@+id/linear_star"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tv_article_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_article_photo"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_article_photo"
+            android:layout_toLeftOf="@+id/tv_article_go"
+            android:layout_toRightOf="@+id/iv_article_photo"
+            android:layout_toStartOf="@+id/tv_article_go"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/blue_dark"
+            android:textSize="16sp"
+            tools:text="绿茶婊奥利绿茶婊奥利奥绿绿茶婊奥利绿茶婊奥利奥绿茶婊奥利奥奥茶婊奥利奥奥" />
+
+        <TextView
+            android:id="@+id/tv_article_read_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_article_name"
+            android:layout_toEndOf="@+id/iv_article_photo"
+            android:layout_toRightOf="@+id/iv_article_photo"
+            android:textSize="10sp"
+            android:layout_marginTop="2dp"
+            tools:text="12 人阅读" />
+
+        <TextView
+            android:id="@+id/tv_article_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_article_read_num"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/tv_article_go"
+            android:layout_toRightOf="@+id/iv_article_photo"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textSize="10sp"
+            tools:text="在感情中迷茫的人们指点迷津为在感情中迷茫的人们指点迷津" />
+
+        <TextView
+            android:id="@+id/tv_article_go"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/button_red_gradient"
+            android:gravity="center"
+            android:text="@string/click_look"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

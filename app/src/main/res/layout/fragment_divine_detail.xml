@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/bg">
+
+            <com.example.fansonlib.widget.textview.TextViewDrawable
+                android:id="@+id/linear_star"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/book_order_star_bg"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="@string/order_detail"
+                android:textColor="@color/white_selected"
+                android:textSize="8sp"
+                app:cit_drawableLeft="@mipmap/ic_five_star"
+                app:cit_iconHeight="10dp"
+                app:cit_iconWidth="10dp" />
+
+            <TextView
+                android:id="@+id/tv_time_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/linear_star"
+                android:text="@string/order_time" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/orderDetailInfoTextStyle"
+                android:layout_below="@+id/linear_star"
+                android:layout_toRightOf="@+id/tv_time_tip"
+                tools:text="2017 年" />
+
+            <TextView
+                android:id="@+id/tv_type_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/tv_time_tip"
+                android:text="@string/order_type" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/orderDetailInfoTextStyle"
+                android:layout_below="@+id/tv_time_tip"
+                android:layout_toRightOf="@+id/tv_time_tip"
+                tools:text="塔罗牌" />
+
+            <TextView
+                android:id="@+id/tv_price_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/tv_type_tip"
+                android:text="@string/order_price" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/orderDetailInfoTextStyle"
+                android:layout_below="@+id/tv_type_tip"
+                android:layout_toRightOf="@+id/tv_time_tip"
+                tools:text="288" />
+
+            <TextView
+                android:id="@+id/tv_pay_status_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/tv_price_tip"
+                android:text="@string/order_pay_status" />
+
+            <TextView
+                android:id="@+id/tv_pay_status"
+                style="@style/orderDetailInfoTextStyle"
+                android:layout_below="@+id/tv_price_tip"
+                android:layout_toEndOf="@+id/tv_time_tip"
+                android:layout_toRightOf="@+id/tv_time_tip"
+                tools:text="已支付" />
+
+            <TextView
+                android:id="@+id/tv_describe_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/tv_pay_status_tip"
+                android:text="@string/order_remark" />
+
+            <TextView
+                android:id="@+id/tv_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv_pay_status_tip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/tv_time_tip"
+                android:layout_toEndOf="@+id/tv_time_tip"
+                android:background="@drawable/item_bg_has_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="14sp"
+                tools:text="测试描述" />
+
+            <TextView
+                android:id="@+id/tv_orderId1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv_describe"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                tools:text="订单编号#123" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/bg">
+
+
+            <com.example.fansonlib.widget.textview.TextViewDrawable
+                android:id="@+id/linear_person_info"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/book_order_star_bg"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="@string/master_info"
+                android:textColor="@color/white_selected"
+                android:textSize="8sp"
+                app:cit_drawableLeft="@mipmap/ic_five_star"
+                app:cit_iconHeight="10dp"
+                app:cit_iconWidth="10dp" />
+
+            <TextView
+                android:id="@+id/tv_name_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/linear_person_info"
+                android:text="@string/order_person_name" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/orderDetailInfoTextStyle"
+                android:layout_below="@+id/linear_person_info"
+                android:layout_toRightOf="@+id/tv_name_tip"
+                tools:text="2017 年" />
+
+            <TextView
+                android:id="@+id/tv_sex_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/tv_name_tip"
+                android:text="@string/order_person_sex" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                style="@style/orderDetailInfoTextStyle"
+                android:layout_below="@+id/tv_name_tip"
+                android:layout_toRightOf="@+id/tv_name_tip"
+                tools:text="2017 年" />
+
+            <TextView
+                android:id="@+id/tv_business_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/tv_sex_tip"
+                android:text="@string/order_person_business" />
+
+            <TextView
+                android:id="@+id/tv_business"
+                style="@style/orderDetailInfoTextStyle"
+                android:layout_below="@+id/tv_sex_tip"
+                android:layout_toEndOf="@+id/tv_name_tip"
+                android:layout_toRightOf="@+id/tv_name_tip"
+                tools:text="2017 年" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/person_btn_bg"
+            android:gravity="center"
+            android:text="@string/cancel_order"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_cancel_order"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/person_btn_bg"
+            android:gravity="center"
+            android:text="@string/cancel_order"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

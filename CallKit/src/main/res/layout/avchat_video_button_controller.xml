@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/linear_ask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/avchatImageStyle"
+            android:onClick="onAskButtonClick"
+            android:src="@drawable/avchat_btn_edit" />
+
+        <TextView
+            style="@style/avchatTextStyle"
+            android:text="@string/problem"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_camera_close"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_close_camera"
+            android:onClick="onCloseCameraClick"
+            style="@style/avchatImageStyle"
+            android:src="@drawable/avchat_btn_camera" />
+
+        <TextView
+            style="@style/avchatTextStyle"
+            android:text="@string/rc_voip_camera"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_call_mute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_mute"
+            style="@style/avchatImageStyle"
+            android:onClick="onMuteButtonClick"
+            android:src="@drawable/avchat_btn_microphone" />
+
+        <TextView
+            style="@style/avchatTextStyle"
+            android:text="@string/rc_voip_mute"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_camera_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_switch_camera"
+            android:onClick="onSwitchCameraClick"
+            style="@style/avchatImageStyle"
+            android:src="@drawable/avchat_btn_camera_switch" />
+
+        <TextView
+            style="@style/avchatTextStyle"
+            android:text="@string/rc_voip_camera"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_hang_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/avchatImageStyle"
+            android:onClick="onHangupBtnClick"
+            android:src="@drawable/avchat_btn_hangup" />
+
+        <TextView
+            style="@style/avchatTextStyle"
+            android:text="@string/end_connect"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_handfree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/avchatImageStyle"
+            android:onClick="onHandFreeButtonClick"
+            android:src="@drawable/avchat_btn_hangfree" />
+
+        <TextView
+            style="@style/avchatTextStyle"
+            android:text="@string/rc_voip_handfree"/>
+    </LinearLayout>
+</LinearLayout>

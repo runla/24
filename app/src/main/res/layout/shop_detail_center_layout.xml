@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/item_bg_has_corner"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:text="智障法师说这个可以辟邪" />
+
+    <TextView
+        android:id="@+id/tv_shop_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shop_name"
+        android:layout_marginBottom="10dp"
+        tools:text="杭州" />
+
+    <TextView
+        android:id="@+id/tv_shop_carry_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shop_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_shop_address"
+        tools:text="快递：12.00" />
+
+    <TextView
+        android:id="@+id/tv_shop_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shop_address"
+        android:textColor="@color/deepOrange"
+        android:textSize="24sp"
+        tools:text="￥239" />
+
+    <TextView
+        android:id="@+id/tv_shop_pay_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_shop_price"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_shop_price"
+        tools:text="15 人付款" />
+
+    <TextView
+        android:id="@+id/tv_shop_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_shop_price"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/tv_shop_pay_num"
+        tools:text="库存：66" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_shop_price"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/gray"/>
+
+    <!--<ImageView
+        android:id="@+id/iv_shop_buy_now"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/tv_buy_now"
+        android:layout_alignRight="@+id/tv_buy_now"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_line"
+        android:src="@drawable/button_shop_buy_now" />-->
+
+
+    <TextView
+        android:id="@+id/tv_buy_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_line"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/shop_buy_now"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/button_shop_buy_now"
+        android:textColor="@color/textcolor_selector"
+        android:textSize="12sp" />
+
+
+    <!--<ImageView
+        android:id="@+id/iv_shop_add_to_car"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/button_shop_add_to_car"
+        android:layout_below="@+id/view_line"
+        android:layout_centerHorizontal="true" />-->
+
+    <TextView
+        android:id="@+id/tv_add_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:drawableTop="@drawable/button_shop_add_to_car"
+        android:drawablePadding="3dp"
+        android:textColor="@color/textcolor_selector"
+        android:text="@string/shop_add_to_buy"
+        android:textSize="12sp" />
+
+    <!--<ImageView
+        android:id="@+id/iv_shop_add_like"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/tv_like"
+        android:layout_alignRight="@+id/tv_like"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_line"
+        android:src="@drawable/button_shop_add_like" />-->
+
+    <TextView
+        android:id="@+id/tv_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_line"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/shop_add_to_like"
+        android:drawableTop="@drawable/button_shop_add_like"
+        android:textColor="@color/textcolor_selector"
+        android:drawablePadding="3dp"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_buy_now"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_product_describe"
+        tools:text="描述这是一个非常厉害的产品描述这是一个非常厉害的产品描述这是一个非常厉害的产品"
+        android:layout_below="@+id/view_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

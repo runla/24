@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="loginBtnHeight">50dp</dimen>
+    <dimen name="loginBtnWidth">135dp</dimen>
+
+    <!-- 主界面中半圆的直径、半径-->
+    <dimen name="halfCircleRadius">65dp</dimen>
+    <dimen name="halfCirclediameter">130dp</dimen>
+
+    <dimen name="itemHistoryHeight">100dp</dimen>
+    <dimen name="itemHistoryHeight1">100dp</dimen>
+
+    <dimen name="yms_dimens_50.0_px">25.0dp</dimen>
+</resources>

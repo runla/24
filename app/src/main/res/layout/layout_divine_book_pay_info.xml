@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/shape_bg_border_blue"
+    android:orientation="vertical"
+    android:layout_below="@+id/stepProgress"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_button_border_blue"
+        android:padding="5dp"
+        android:text="用户姓名：suan"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_master_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_button_border_blue"
+        android:padding="5dp"
+        android:text="咨询大师：suan"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_divine_business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_button_border_blue"
+        android:padding="5dp"
+        android:text="占卜服务：塔罗牌占卜"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/divine_book_rule1"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/divine_book_rule2"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/divine_book_rule3"
+        android:textSize="10sp" />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="@string/divine_book_rule4"-->
+        <!--android:textColor="@color/blue_light"-->
+        <!--android:textSize="16sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/divine_book_rule5"-->
+        <!--android:textColor="@color/blue_light"-->
+        <!--android:textSize="16sp" />-->
+
+    <TextView
+        android:id="@+id/tv_book_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:text="￥168"
+        android:textColor="@color/deepRed"
+        android:textSize="24sp" />
+</LinearLayout>

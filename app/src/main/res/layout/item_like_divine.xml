@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_ripple_white"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_label"
+            android:layout_width="46dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/pinkBtnEndNormalColor"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="2dp"
+                android:src="@mipmap/ic_five_star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divine"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_divine_photo"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/linear_label"
+            android:layout_toRightOf="@+id/linear_label"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tv_divine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_divine_photo"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/iv_divine_photo"
+            android:layout_toRightOf="@+id/iv_divine_photo"
+            android:textColor="@color/deepPurple"
+            android:textSize="16sp"
+            tool:text="绿茶婊奥利奥." />
+
+        <TextView
+            android:id="@+id/tv_constellation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_divine_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tv_divine_name"
+            android:layout_toLeftOf="@+id/iv_divine_like"
+            android:layout_toRightOf="@+id/tv_divine_name"
+            android:textColor="@color/deepPurple"
+            android:textSize="12sp"
+            tool:text="老处女座" />
+
+        <View
+            android:id="@+id/view_dot"
+            android:layout_width="5dp"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/tv_divine_business"
+            android:layout_alignTop="@+id/tv_divine_business"
+            android:layout_margin="3dp"
+            android:layout_toEndOf="@+id/iv_divine_photo"
+            android:layout_toRightOf="@+id/iv_divine_photo"
+            android:background="@drawable/item_master_dot" />
+
+        <TextView
+            android:id="@+id/tv_divine_business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_divine_name"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/view_dot"
+            android:layout_toRightOf="@+id/view_dot"
+            android:textSize="12sp"
+            tool:text="塔罗咨询" />
+
+        <TextView
+            android:id="@+id/tv_divine_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_divine_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/tv_divine_business"
+            android:layout_toLeftOf="@+id/iv_divine_like"
+            android:layout_toRightOf="@+id/tv_divine_business"
+            android:textSize="12sp"
+            tool:text="桃花运|结婚|稳定" />
+
+        <!--<ImageView
+            android:id="@+id/iv_divine_like"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/like_bg" />-->
+
+        <com.yinghai.a24divine_user.widget.LikeShape
+            android:id="@+id/iv_divine_like"
+            app:like_text="@string/collect_success"
+            app:like_normalTyle="stroke"
+            app:like_selectColor="@color/primary"
+            app:like_textSize="9dp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+        <!--<TextView-->
+            <!--android:id="@+id/tv_divine_like"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@+id/iv_divine_like"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/cancel_collect"-->
+            <!--android:textColor="@color/primary"-->
+            <!--android:textSize="8sp" />-->
+
+        <TextView
+            android:id="@+id/tv_divine_read_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_divine_business"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_divine_photo"
+            android:layout_toRightOf="@+id/iv_divine_photo"
+            android:textSize="10sp"
+            tool:text="本月有 0 人咨询" />
+
+        <TextView
+            android:id="@+id/tv_divine_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_divine_business"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/tv_divine_read_num"
+            android:layout_toRightOf="@+id/tv_divine_read_num"
+            android:textSize="10sp"
+            tool:text="5.0 分" />
+
+        <ImageView
+            android:id="@+id/iv_divine_stars"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/tv_divine_business"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/tv_divine_score"
+            android:layout_toRightOf="@+id/tv_divine_score"
+            android:src="@mipmap/ic_like" />
+
+        <TextView
+            android:id="@+id/tv_divine_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_divine_read_num"
+            android:layout_toEndOf="@+id/iv_divine_photo"
+            android:layout_toRightOf="@+id/iv_divine_photo"
+            android:textColor="@color/deepOrange"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tool:text="￥168" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

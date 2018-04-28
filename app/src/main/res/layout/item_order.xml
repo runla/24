@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:background="@drawable/item_bg_ripple_white"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <com.example.fansonlib.widget.textview.TextViewDrawable
+            android:id="@+id/linear_star"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_half_conner_red"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="@string/augur"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:cit_drawableLeft="@mipmap/ic_five_star"
+            app:cit_iconHeight="10dp"
+            app:cit_iconWidth="10dp" />
+
+
+        <ImageView
+            android:id="@+id/iv_divine_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/linear_star"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_person" />
+
+        <TextView
+            android:id="@+id/tv_augur_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/iv_divine_photo"
+            android:layout_toRightOf="@+id/iv_divine_photo"
+            android:textColor="@color/deepPurple"
+            android:textSize="16sp"
+            tools:text="占卜师" />
+
+        <TextView
+            android:id="@+id/tv_book_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_augur_name"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/iv_divine_photo"
+            android:layout_toRightOf="@+id/iv_divine_photo"
+            android:paddingTop="2dp"
+            android:textColor="@color/orange_light"
+            android:textSize="10sp"
+            tools:text="9月8号 9点" />
+
+
+        <TextView
+            android:id="@+id/tv_divine_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_book_time"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_divine_photo"
+            android:layout_toRightOf="@+id/iv_divine_photo"
+            tools:text="在线视频"
+            android:textColor="@color/orange_light"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_divine_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_divine_type"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_divine_photo"
+            android:layout_toRightOf="@+id/iv_divine_photo"
+            android:textColor="@color/orange_light"
+            android:textSize="10sp"
+            tools:text="580.00" />
+
+        <Button
+            android:id="@+id/btn_status"
+            android:layout_width="60dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/tv_orderId"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_bg_border_conner_orange"
+            android:gravity="center"
+            tools:text="@string/have_paid"
+            android:textColor="@color/orange_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_divine_photo"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:textSize="10sp"
+            tools:text="订单编号：#10223" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

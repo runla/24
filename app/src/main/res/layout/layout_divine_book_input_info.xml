@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/stepProgress"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_divine_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/divine_type"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_divine"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_divine_label"
+            android:layout_alignTop="@+id/tv_divine_label"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_divine_label"
+            android:layout_toRightOf="@+id/tv_divine_label"
+            android:background="@color/primary"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_argur" />
+
+        <TextView
+            android:id="@+id/tv_divine_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/iv_divine"
+            android:layout_toRightOf="@+id/iv_divine"
+            tools:text="塔罗牌占卜"
+            android:textColor="@color/primary"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/tv_input_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/divine_user_name"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_input_name_label"
+            android:layout_alignTop="@+id/tv_input_name_label"
+            android:layout_toEndOf="@+id/tv_input_name_label"
+            android:layout_toRightOf="@+id/tv_input_name_label"
+            android:background="@null"
+            android:maxLength="12"
+            android:textSize="14sp"
+            tools:text="fansonqligsd" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_input_name_label"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_input_sex_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_input_name_label"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/divine_user_sex"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_user_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_input_sex_label"
+            android:layout_below="@+id/tv_input_name_label"
+            android:layout_toEndOf="@+id/tv_input_name_label"
+            android:layout_toRightOf="@+id/tv_input_name_label"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_sex_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/primary"
+                android:text="@string/boy"
+                android:textColor="@color/primary"
+                tools:targetApi="lollipop" />
+
+            <RadioButton
+                android:id="@+id/rb_sex_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/primary"
+                android:text="@string/girl"
+                android:textColor="@color/primary"
+                tools:targetApi="lollipop" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_input_sex_label"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_input_birthday_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_input_sex_label"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/divine_user_birthday"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_user_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_input_birthday_label"
+            android:layout_alignTop="@+id/tv_input_birthday_label"
+            android:layout_below="@+id/tv_input_sex_label"
+            android:layout_toEndOf="@+id/tv_input_name_label"
+            android:layout_toRightOf="@+id/tv_input_name_label"
+            android:background="@null"
+            android:gravity="center_vertical"
+            tools:text="2017-09-09"
+            android:maxLength="10"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_input_birthday_label"
+            android:background="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/tv_input_tel_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_input_birthday_label"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/divine_user_tel"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_user_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_input_tel_label"
+            android:layout_alignTop="@id/tv_input_tel_label"
+            android:layout_below="@+id/tv_input_birthday_label"
+            android:layout_toEndOf="@+id/tv_input_name_label"
+            android:layout_toRightOf="@+id/tv_input_name_label"
+            android:background="@null"
+            android:maxLength="11"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_input_tel_label"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/et_user_problem"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/tv_input_tel_label"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_border_gray"
+            android:gravity="top"
+            android:hint="@string/divine_book_problem_descripe"
+            android:padding="10dp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

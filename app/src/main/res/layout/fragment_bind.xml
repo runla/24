@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:id="@+id/linear_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginBtnHeight"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/login_edit_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_phone" />
+
+        <EditText
+            android:id="@+id/et_tel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/login_edit_please_input_phone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/spinner_country_code"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_btn_country_code_bg"
+            android:gravity="center"
+            android:text="@string/country_code"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relative_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginBtnHeight"
+        android:layout_below="@+id/linear_phone"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/login_edit_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_secret" />
+
+        <EditText
+            android:id="@+id/et_verify_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/login_edit_please_input_verify"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_get_verify_code"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_btn_verify_code_bg"
+            android:text="@string/login_btn_get_verify_code"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_width="@dimen/loginBtnWidth"
+        android:layout_height="@dimen/loginBtnHeight"
+        android:layout_below="@+id/relative_verify_code"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_phone_login"
+        android:text="@string/bind"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>

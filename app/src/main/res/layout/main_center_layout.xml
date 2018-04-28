@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.yinghai.a24divine_user.widget.NoteView
+        android:id="@+id/note_book"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        app:note_turn="right"
+        app:note_textToImage="14dp"
+        app:note_marginHorizontal="10dp"
+        app:note_marginVertical="0dp"
+        app:note_textContent="@string/book_service"
+        app:note_textColor="@color/deepRed"
+        app:note_imageSrc="@mipmap/ic_book_circle"
+        app:note_iconColor="@color/deepRed"
+        app:note_textSize="18sp"
+        app:note_iamgeHeight="40dp">
+    </com.yinghai.a24divine_user.widget.NoteView>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_book_offline"-->
+        <!--android:layout_toRightOf="@+id/note_book"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:src="@mipmap/ic_book_offline"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image_book_online"-->
+        <!--android:layout_toRightOf="@+id/note_book"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:src="@mipmap/ic_book_online"/>-->
+
+
+</LinearLayout>

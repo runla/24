@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_item"
+        android:layout_width="match_parent"
+        android:background="@drawable/item_bg_ripple_white"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/iv_product"
+            android:layout_toRightOf="@+id/iv_product"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            tool:text="来看经十东路附近是的李开复接收到水电费开始了的看法就是的路口附近离开时点击法律手段控件发了" />
+
+        <TextView
+            android:id="@+id/tv_shop_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_product_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/iv_product"
+            android:layout_toRightOf="@+id/iv_product"
+            android:textSize="12sp"
+            tool:text="杭州" />
+
+        <ImageView
+            android:id="@+id/iv_shop_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shop_address"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_product"
+            android:layout_toRightOf="@+id/iv_product"
+            android:src="@mipmap/ic_package" />
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/iv_product"
+            android:layout_toRightOf="@+id/iv_product"
+            android:gravity="bottom"
+            android:textColor="@color/deepOrange"
+            android:textSize="18sp"
+            tool:text="￥128" />
+
+        <TextView
+            android:id="@+id/tv_buy_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/tv_product_price"
+            android:layout_toRightOf="@+id/tv_product_price"
+            tool:text="数量：8" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_more" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

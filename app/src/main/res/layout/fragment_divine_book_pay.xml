@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@drawable/shape_toolbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:src="@mipmap/ic_back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:ellipsize="end"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:text="@string/confirm_pay" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.example.fansonlib.widget.stepprogress.HorizontalStepProgress
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/stepProgress"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/layout_divine_book_pay_info"/>
+
+    <Button
+        android:id="@+id/btn_confirm_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/loginBtnHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:background="@drawable/button_phone_login"
+        android:text="@string/confirm_pay"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+</RelativeLayout>

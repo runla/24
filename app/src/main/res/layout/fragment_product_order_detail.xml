@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.fansonlib.widget.recyclerview.AutoLoadRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bg">
+
+            <com.example.fansonlib.widget.textview.TextViewDrawable
+                android:id="@+id/linear_person_info"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/book_order_star_bg"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="@string/order_detail"
+                android:textColor="@color/white_selected"
+                android:textSize="8sp"
+                app:cit_drawableLeft="@mipmap/ic_five_star"
+                app:cit_iconHeight="10dp"
+                app:cit_iconWidth="10dp" />
+
+            <TextView
+                android:id="@+id/tv_order_amount_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/linear_person_info"
+                android:text="@string/order_amount" />
+
+            <TextView
+                android:id="@+id/tv_order_amount"
+                style="@style/orderDetailInfoTextStyle"
+                android:layout_below="@+id/linear_person_info"
+                android:layout_toRightOf="@+id/tv_order_amount_tip"
+                tools:text="2017 年" />
+
+            <TextView
+                android:id="@+id/tv_pay_status_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/tv_order_amount"
+                android:text="@string/order_pay_status" />
+
+            <TextView
+                android:id="@+id/tv_pay_status"
+                style="@style/orderDetailInfoTextStyle"
+                android:layout_below="@+id/tv_order_amount"
+                android:layout_toRightOf="@+id/tv_pay_status_tip"
+                tools:text="2017 年" />
+
+            <TextView
+                android:id="@+id/tv_address_tip"
+                style="@style/orderDetailInfoTextTipStyle"
+                android:layout_below="@+id/tv_pay_status_tip"
+                android:text="@string/shipping_address" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_pay_status_tip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/tv_order_amount_tip"
+                android:background="@color/white"
+                android:maxLines="4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                tools:text="广东省珠海市跨境工业区。拉上开多个啊拉上开多个啊拉上开多个啊我客观上拉上开多个啊看手机登录告诉" />
+
+
+            <TextView
+                android:id="@+id/tv_orderId1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                tools:text="订单编号#123" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_status"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/person_btn_bg"
+            android:gravity="center"
+            android:text="@string/cancel_order"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/person_btn_bg"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/cancel_order"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

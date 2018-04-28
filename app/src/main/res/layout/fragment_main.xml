@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/fake_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <include
+            android:id="@+id/layout_top"
+            layout="@layout/main_top_cardview" />
+
+        <!-- 类型选择 -->
+        <com.example.fansonlib.widget.recyclerview.AutoLoadRecyclerView
+            android:id="@+id/recyclerview_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <include
+            layout="@layout/main_center_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_master_divine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/master_divine"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <com.example.fansonlib.widget.recyclerview.AutoLoadRecyclerView
+            android:id="@+id/recyclerview_master"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.example.fansonlib.widget.recyclerview.AutoLoadRecyclerView>
+
+        <TextView
+            android:id="@+id/tv_master_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/master_article"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <com.example.fansonlib.widget.recyclerview.AutoLoadRecyclerView
+            android:id="@+id/recyclerview_article"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.example.fansonlib.widget.recyclerview.AutoLoadRecyclerView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

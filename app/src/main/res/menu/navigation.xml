@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_index"
+        android:icon="@mipmap/ic_index_press"
+        android:title="@string/index" />
+
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@mipmap/ic_shop_press"
+        android:title="@string/shop" />
+
+    <item
+        android:id="@+id/navigation_person"
+        android:icon="@mipmap/ic_me_press"
+        android:title="@string/person" />
+
+</menu>

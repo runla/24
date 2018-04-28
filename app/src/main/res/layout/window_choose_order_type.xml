@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/popup_anima"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_bg_grey_border">
+
+        <com.example.fansonlib.widget.textview.TextViewDrawable
+            android:id="@+id/td_type_divine"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/divine"
+            android:textColor="@color/primary"
+            android:textSize="12sp"
+            app:cit_drawableLeft="@mipmap/ic_five_star"
+            app:cit_iconColor="@color/primary"
+            app:cit_iconHeight="15dp"
+            app:cit_iconWidth="15dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/td_type_divine"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/grey_light" />
+
+        <com.example.fansonlib.widget.textview.TextViewDrawable
+            android:id="@+id/td_type_product"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/line"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/string_shop"
+            android:textColor="@color/deepBlue"
+            android:textSize="12sp"
+            app:cit_drawableLeft="@mipmap/ic_shop_press"
+            app:cit_iconColor="@color/deepBlue"
+            app:cit_iconHeight="15dp"
+            app:cit_iconWidth="15dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

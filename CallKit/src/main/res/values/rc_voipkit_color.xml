@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rc_voip_background_color">#262e42</color>
+    <color name="rc_voip_check_disable">#1f4a76</color>
+    <color name="rc_voip_check_enable">#0099ff</color>
+
+    <color name="primary">#67A3B4</color>
+    <color name="primary_light">#7BAFBD</color>
+    <color name="primary_dark">#589AAC</color>
+
+    <color name="pink">#f3bbb0</color>
+    <!-- 输入对话框 -->
+    <color name="dialogSendBtnPressed">#007AFF</color>
+    <color name="dialogSendText">#939393</color>
+    <color name="dialogSendEditBg">#EDEEF0</color>
+
+    <color name="trans_black">#aa000000</color>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/popup_contianer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_border_pink"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_del"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/delete"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/line"
+            android:background="@color/primary_light"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/copy"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

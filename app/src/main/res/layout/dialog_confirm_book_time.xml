@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@drawable/item_bg_has_corner"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_book_time"
+        android:text="@string/select_book_time"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/primary_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.fansonlib.widget.recyclerview.AutoLoadRecyclerView
+        android:layout_below="@+id/tv_book_time"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/btn_confirm"></com.example.fansonlib.widget.recyclerview.AutoLoadRecyclerView>
+
+    <TextView
+        android:id="@+id/tv_data_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:drawableTop="@mipmap/ic_box_empty"
+        android:gravity="center"
+        android:text="@string/no_time_select"
+        android:visibility="gone" />
+    <!--<View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/recyclerview"
+        android:background="@color/grey_light" />-->
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/line2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_phone_login"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

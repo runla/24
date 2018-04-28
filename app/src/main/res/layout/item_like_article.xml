@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_bg_ripple_white"
+     >
+
+        <LinearLayout
+            android:id="@+id/linear_label"
+            android:layout_width="46dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="2dp"
+                android:src="@mipmap/ic_article_label" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/article"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_augur_photo"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/linear_label"
+            android:layout_toEndOf="@+id/linear_label"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_image" />
+
+        <TextView
+            android:id="@+id/tv_article_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/iv_augur_photo"
+            android:layout_toRightOf="@+id/iv_augur_photo"
+            android:layout_toEndOf="@+id/iv_augur_photo"
+            android:layout_toLeftOf="@+id/iv_article_collect"
+            android:layout_toStartOf="@+id/iv_article_collect"
+            android:textColor="@color/blue_dark"
+            android:textSize="16sp"
+            tools:text="绿茶婊奥利奥" />
+
+        <TextView
+            android:id="@+id/tv_article_read_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_article_name"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_article_name"
+            android:textSize="10sp"
+            tools:text="12 人阅读" />
+
+        <TextView
+            android:id="@+id/tv_article_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_article_name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_augur_photo"
+            android:ellipsize="end"
+            android:lines="3"
+            android:textSize="10sp"
+            tools:text="为在感情中迷茫为在感情中迷茫的人们指点迷津的人们指点迷津" />
+
+
+        <!--<ImageView
+            android:id="@+id/iv_article_collect"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/like_bg" />-->
+
+        <com.yinghai.a24divine_user.widget.LikeShape
+            android:id="@+id/iv_article_collect"
+            app:like_text="@string/collect_success"
+            app:like_normalTyle="stroke"
+            app:like_selectColor="@color/primary"
+            app:like_textSize="9dp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_article_like"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@+id/iv_article_collect"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/cancel_collect"-->
+            <!--android:textColor="@color/primary"-->
+            <!--android:textSize="8sp" />-->
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

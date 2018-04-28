@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/shape_bg_border_pink"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_master_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="绿茶婊嗷呜" />
+
+       <!-- <TextView
+            android:id="@+id/tv_master_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_master_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_master_name"
+            android:text="Lv7"
+            android:textColor="@color/deepBlue"
+            android:textSize="16sp" />-->
+
+        <TextView
+            android:id="@+id/tv_master_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_master_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_master_name"
+            android:layout_toEndOf="@+id/tv_master_name"
+            android:textColor="@color/primary_light"
+            android:textSize="14sp"
+            tools:text="在线" />
+
+        <TextView
+            android:id="@+id/tv_master_follow_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="粉丝数：666"
+            android:textSize="12sp"
+            android:layout_alignBottom="@+id/tv_master_online"
+            android:layout_toLeftOf="@+id/tv_master_follow"
+            android:layout_toStartOf="@+id/tv_master_follow"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/tv_master_follow"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ripple_btn_purple"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/follow"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tv_master_divine_type"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tv_master_name"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_oval_light_purple"
+            android:gravity="center"
+            android:padding="3dp"
+            tools:text="塔罗塔罗塔罗咨塔罗塔罗塔罗咨询咨询咨询询咨询咨询"
+            android:ellipsize="end"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_master_descripe"
+            android:layout_below="@+id/tv_master_divine_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="拉到的拉拉到拉拉拉到的拉到的就付款就拉到的拉拉到拉拉拉到的拉到的就付款就付款到的拉到的就付款就付款到的拉到的就付款就付款的拉到的就付款就付款到的就付款就付款付款到的拉到的就付款就付款到的拉到的就付款就付款的拉到的就付款就付款到的就付款就付款"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_master_score1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_like_fill" />
+
+        <ImageView
+            android:id="@+id/iv_master_score2"
+            android:layout_width="35dp"
+            android:layout_toRightOf="@+id/iv_master_score1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/iv_master_score1"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_like_fill" />
+
+        <ImageView
+            android:id="@+id/iv_master_score3"
+            android:layout_toRightOf="@+id/iv_master_score2"
+            android:layout_toEndOf="@+id/iv_master_score2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_like_fill" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_master_score3"
+            android:layout_toLeftOf="@+id/tv_master_score"
+            android:layout_toStartOf="@+id/tv_master_score"
+            android:text="@string/rate" />
+
+        <TextView
+            android:id="@+id/tv_master_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_master_score3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            tools:text="99.0%"
+            android:textColor="@color/deepGreen"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_master_reward"
+            android:layout_below="@+id/iv_master_score3"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="被打赏:0次" />
+
+        <TextView
+            android:id="@+id/tv_master_respect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_master_score3"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="被采纳:666次" />
+
+        <TextView
+            android:id="@+id/tv_master_deals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_master_score3"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            tools:text="成交数:666次" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/video_chat_white_bg"
+        android:padding="8dp">
+
+        <io.rong.imkit.widget.AsyncImageView
+            android:id="@+id/iv_user_header"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:scaleType="centerCrop"
+            app:RCShape="circle"
+            android:src="@drawable/rc_default_portrait"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_user_header"
+            android:layout_toRightOf="@+id/iv_user_header"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="80dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="陈坚润11111111111111111" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_remind_info"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@+id/iv_user_header"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="80dp"
+            android:text="塔罗推算"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_remind_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_user_header"
+            android:layout_toRightOf="@+id/iv_user_header"
+            android:textSize="12sp"
+            tools:text="00:11:56" />
+    </RelativeLayout>
+
+</RelativeLayout>

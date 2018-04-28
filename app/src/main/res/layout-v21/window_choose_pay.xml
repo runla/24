@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/popup_anima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_windows_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/linear_price"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pay_bg"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_fee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_fee"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                tools:text="￥100"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogroup_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_price"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/pay_bg"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/selector_pay"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/wechat_pay" />
+
+            <RadioButton
+                android:id="@+id/radio_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/pay_bg"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/selector_pay"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/ali_pay" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_confirm_pay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/radiogroup_pay"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@color/primary_light"
+            android:textColor="@color/white"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_cancel_pay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/btn_confirm_pay"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey_light"
+            android:textColor="@color/white"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="bean"
+            type="com.yinghai.a24divine_user.bean.AddressListBean.DataBean.AddressBean"/>
+    </data>
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/item_history_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.example.fansonlib.widget.textview.TextViewDrawable
+                android:id="@+id/td_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="@string/name2"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                app:cit_drawableLeft="@mipmap/ic_address_person"
+                app:cit_iconColor="@color/primary"
+                app:cit_iconHeight="10dp"
+                app:cit_iconWidth="10dp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:hint="@string/please_input_name"
+                android:paddingLeft="5dp"
+                android:textSize="16sp"
+                android:paddingRight="5dp"
+                android:background="@null"
+                android:textColor="@color/grey_dark"
+                android:text="@{bean.asConsigneeName}"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/rg_user_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:gravity="center_vertical"
+                    android:id="@+id/rb_sex_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary"
+                    android:text="@string/mr"
+                    android:textColor="@color/primary"
+                    tools:targetApi="lollipop" />
+
+                <RadioButton
+                    android:id="@+id/rb_sex_girl"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="@color/primary"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mrs"
+                    tools:targetApi="lollipop"
+                    android:textColor="@color/primary" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/item_history_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.example.fansonlib.widget.textview.TextViewDrawable
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:text="@string/phone"
+                android:textSize="14sp"
+                app:cit_drawableLeft="@mipmap/icon_phone"
+                app:cit_iconColor="@color/primary"
+                app:cit_iconHeight="10dp"
+                app:cit_iconWidth="10dp" />
+
+            <EditText
+                android:id="@+id/et_tel"
+                android:text="@{bean.asTel}"
+                android:background="@null"
+                android:hint="@string/please_input_phone"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:textColor="@color/grey_dark"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/item_history_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.example.fansonlib.widget.textview.TextViewDrawable
+                android:id="@+id/td_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:text="@string/address"
+                android:textSize="14sp"
+                app:cit_drawableLeft="@mipmap/ic_address"
+                app:cit_iconColor="@color/primary"
+                app:cit_iconHeight="10dp"
+                app:cit_iconWidth="10dp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="wrap_content"
+                android:text="@{bean.asStreet}"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grey_dark"
+                android:layout_toEndOf="@+id/td_address"
+                android:layout_toRightOf="@+id/td_address"
+                android:background="@null"
+                android:hint="@string/please_input_address"
+                android:textSize="16sp"
+                android:layout_marginRight="35dp"
+                android:layout_marginEnd="35dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_down"
+                android:layout_alignTop="@+id/et_address"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/item_history_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/street_details"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                />
+
+            <EditText
+                android:id="@+id/et_detail"
+                android:text="@{bean.asDetails}"
+                android:background="@null"
+                android:textColor="@color/grey_dark"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_phone_login"
+            android:text="@string/confirm"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+</layout>

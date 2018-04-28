@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/shape_toolbar_bg"/>
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/linear_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginBtnHeight"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/login_edit_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+
+        <com.yinghai.a24divine_user.widget.DrawableEditText
+            android:id="@+id/et_tel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/login_edit_please_input_phone"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:myDrawableLeft="@mipmap/icon_phone"
+            app:myDrawableLeftSize="25dp" />
+
+        <TextView
+            android:id="@+id/spinner_country_code"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_btn_country_code_bg"
+            android:gravity="center"
+            android:text="@string/country_code"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginBtnHeight"
+        android:layout_below="@+id/linear_phone"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/login_edit_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <com.yinghai.a24divine_user.widget.DrawableEditText
+            android:id="@+id/et_verify_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/login_edit_please_input_verify"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:myDrawableLeft="@mipmap/icon_secret"
+            app:myDrawableLeftSize="25dp" />
+
+
+        <Button
+            android:id="@+id/btn_get_verify_code"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_btn_verify_code_bg"
+            android:text="@string/login_btn_get_verify_code"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginBtnHeight"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/login_edit_bg"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingLeft="20dp">
+
+        <com.yinghai.a24divine_user.widget.DrawableEditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:hint="@string/please_enter_password"
+            android:inputType="textPassword"
+            android:maxLength="26"
+            android:textSize="14sp"
+            app:myDrawableLeft="@mipmap/ic_clock"
+            app:myDrawableLeftSize="25dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/loginBtnWidth"
+        android:layout_height="@dimen/loginBtnHeight"
+        android:background="@drawable/button_phone_login"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/login_btn_login"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_login_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="25dp"
+            android:textColor="@color/primary"
+            android:text="@string/password_login"/>
+
+        <TextView
+            android:id="@+id/tv_find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="25dp"
+            android:textColor="@color/primary"
+            android:text="@string/find_password"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 虚线 -->
+    <declare-styleable name="NoteView">
+        <attr name="note_marginVertical" format="dimension"></attr>          <!-- 签的垂直邊距 -->
+        <attr name="note_marginHorizontal" format="dimension"></attr>        <!-- 签的水平边距 -->
+        <attr name="note_iamgeHeight" format="dimension"></attr>             <!-- 图标的高度 -->
+        <attr name="note_textSize" format="dimension"></attr>                <!-- 文本的字体大小 -->
+        <attr name="note_imageToTop" format="dimension"></attr>              <!-- 图标到签头的距离 -->
+        <attr name="note_textToImage" format="dimension"></attr>             <!-- 文本到图标的距离 -->
+        <attr name="note_textContent" format="string"></attr>                <!-- 签的文本内容 -->
+        <attr name="note_imageSrc" format="reference"></attr>                <!-- 图标资源 -->
+        <attr name="note_background" format="color|reference"></attr>        <!-- 签的背景色 -->
+        <attr name="note_background_press" format="color|reference"></attr>  <!-- 签的背景色，按下 -->
+        <attr name="note_backgroundDrawable" format="reference"></attr>      <!-- 签的背景色 -->
+        <attr name="note_iconColor" format="color"></attr>                   <!-- 图标的颜色 -->
+        <attr name="note_textColor" format="color"></attr>                   <!-- 文字颜色 -->
+        <attr name="note_turn" format="integer">
+            <enum name="left" value="0"></enum>
+            <enum name="right" value="1"></enum>
+            <enum name="top" value="2"></enum>
+            <enum name="bottom" value="3"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="DrawableEditTextStyle">
+        <attr name="myDrawableLeftSize" format="dimension"></attr>
+        <attr name="myDrawableRightSize" format="dimension"></attr>
+        <attr name="myDrawableTopSize" format="dimension"></attr>
+        <attr name="myDrawableBottomSize" format="dimension"></attr>
+        <attr name="myDrawableLeft" format="reference"></attr>
+        <attr name="myDrawableRight" format="reference"></attr>
+        <attr name="myDrawableTop" format="reference"></attr>
+        <attr name="myDrawableBottom" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShopAmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="IndexView">
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="lineSpace" format="dimension"/>
+    </declare-styleable>
+
+    <!--收藏自定义 View 样式-->
+    <declare-styleable name="LikeShape">
+        <attr name="like_selected" format="boolean"></attr>
+        <attr name="like_unSelectColor" format="color"></attr>
+        <attr name="like_selectColor" format="color"></attr>
+        <attr name="like_textSize" format="dimension"></attr>
+        <attr name="like_text" format="string"></attr>
+        <attr name="like_strockWidth" format="dimension"></attr>
+        <attr name="like_normalTyle" format="enum">
+            <enum name="fill" value="0"></enum>
+            <enum name="stroke" value="1"></enum>
+        </attr>
+
+    </declare-styleable>
+</resources>

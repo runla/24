@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_bg_ripple_white"
+      >
+
+        <com.example.fansonlib.widget.textview.TextViewDrawable
+            android:id="@+id/linear_star"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="@color/deepBlue"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="@string/string_shop"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:cit_drawableLeft="@mipmap/ic_shop_press"
+            app:cit_iconHeight="10dp"
+            app:cit_iconWidth="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_shop_picture"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/linear_star"
+            android:layout_toRightOf="@+id/linear_star"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tv_shopping_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_shop_picture"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/iv_shop_picture"
+            android:layout_toLeftOf="@+id/tv_shop_go"
+            android:layout_toRightOf="@+id/iv_shop_picture"
+            android:layout_toStartOf="@+id/tv_shop_go"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/blue_dark"
+            android:textSize="16sp"
+            tool:text="来看经十收到水电费开接收到水电费开始了开复接收到水电费开始了的看法就是的路口附近离开时点击法律手段控件发了" />
+
+        <TextView
+            android:id="@+id/tv_shopping_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shopping_name"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_shop_picture"
+            android:layout_toRightOf="@+id/iv_shop_picture"
+            android:textSize="12sp"
+            tool:text="杭州" />
+
+        <ImageView
+            android:id="@+id/iv_shop_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_shopping_address"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tv_shopping_address"
+            android:layout_toRightOf="@+id/tv_shopping_address"
+            android:src="@mipmap/ic_package" />
+
+        <TextView
+            android:id="@+id/tv_shop_price"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shopping_address"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_shop_picture"
+            android:layout_toRightOf="@+id/iv_shop_picture"
+            android:textColor="@color/deepOrange"
+            android:textSize="14sp"
+            tool:text="￥128" />
+
+        <TextView
+            android:id="@+id/tv_shop_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_shop_price"
+            android:layout_alignBottom="@+id/tv_shop_price"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tv_shop_price"
+            android:layout_toRightOf="@+id/tv_shop_price"
+            android:textSize="12sp"
+            tool:text="17 人付款" />
+
+        <TextView
+            android:id="@+id/tv_shop_go"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_blue_gradient"
+            android:gravity="center"
+            android:text="@string/click_look"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

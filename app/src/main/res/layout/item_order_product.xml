@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_bg_ripple_white"
+        android:clickable="true">
+
+
+        <com.example.fansonlib.widget.textview.TextViewDrawable
+            android:id="@+id/linear_star"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_half_conner_blue_dark"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="@string/shop"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:cit_drawableLeft="@mipmap/ic_five_star"
+            app:cit_iconHeight="10dp"
+            app:cit_iconWidth="10dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/linear_star"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey" />
+
+        <ImageView
+            android:id="@+id/iv_product_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/default_image" />
+
+        <TextView
+            android:id="@+id/tv_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line"
+            android:layout_alignStart="@+id/line"
+            android:layout_alignTop="@+id/iv_product_photo"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue_dark"
+            android:textSize="12sp"
+            tools:text="开光项链-智障法师的作品开光项链-智障法师的作品开光项" />
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_product_title"
+            android:layout_alignBottom="@+id/tv_product_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/orange_light"
+            android:textSize="10sp"
+            tools:text="12700.00" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line"
+            android:layout_alignStart="@+id/line"
+            android:layout_below="@+id/tv_product_title"
+            android:layout_margin="3dp"
+            android:layout_toEndOf="@+id/iv_product_photo"
+            android:layout_toRightOf="@+id/iv_product_photo"
+            android:paddingTop="2dp"
+            android:textSize="10sp"
+            tools:text="杭州" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/iv_product_photo"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_product_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/line"
+            android:layout_alignStart="@+id/line"
+            android:layout_below="@+id/line2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            tools:text="一件商品" />
+
+        <TextView
+            android:id="@+id/tv_price_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/tv_product_amount"
+            android:layout_toRightOf="@+id/tv_product_amount"
+            android:gravity="center"
+            android:layout="@+id/tv_product_amount"
+            android:textColor="@color/orange_light"
+            android:textSize="12sp"
+            tools:text="@string/price_sum" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="60dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line2"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_border_blue"
+            android:gravity="center"
+            android:textColor="@color/blue_light"
+            android:textSize="12sp"
+            tools:text="@string/go_pay" />
+
+        <TextView
+            android:id="@+id/tv_orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/line2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:textSize="10sp"
+            tools:text="订单编号：#10223" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

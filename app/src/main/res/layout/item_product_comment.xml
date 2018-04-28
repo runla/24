@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/shape_bg_border_conner"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_comment_header"
+        tools:src="@mipmap/ic_person"
+        android:layout_marginRight="5dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/tv_comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Sam"
+        android:layout_toRightOf="@+id/image_comment_header"
+        android:layout_alignTop="@+id/image_comment_header"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_comment_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="颜色分类："
+        android:layout_toRightOf="@+id/image_comment_header"
+        android:layout_alignBottom="@+id/image_comment_header"
+        android:textColor="@color/dark_orange"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师智障法师"
+        android:layout_toRightOf="@+id/image_comment_header"
+        android:layout_below="@+id/tv_comment_color"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        />
+</RelativeLayout>

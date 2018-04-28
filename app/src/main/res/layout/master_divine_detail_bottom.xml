@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:background="@drawable/item_bg_blue"
+    android:layout_margin="16dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_divine_type"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/ic_book_circle"
+        android:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_divine_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_divine_type"
+        android:layout_alignTop="@+id/iv_divine_type"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_divine_type"
+        android:gravity="center"
+        tools:text="@string/talus_divine"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_divine_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_divine_type"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/item_bg_has_corner"
+        android:paddingBottom="2dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="2dp"
+        tools:text="168金币/次"
+        android:textColor="@color/deepBlue"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/iv_divine_type"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_divine_descripe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:ellipsize="end"
+        android:lines="2"
+        tools:text="为雅诗兰黛非科技上楼的付款建设路口的放假代理"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_divine_has_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_divine_descripe"
+        android:layout_marginTop="10dp"
+        tools:text="已有80人咨询过"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</RelativeLayout>

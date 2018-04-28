@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="bean"
+            type="com.yinghai.a24divine_user.bean.ArticleBean.DataBean.ArticleListBean" />
+
+    </data>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/item_master_article_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <ImageView
+            android:id="@+id/iv_augur_photo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@mipmap/default_image" />
+
+        <TextView
+            android:id="@+id/tv_article_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_augur_photo"
+            android:layout_toEndOf="@+id/iv_augur_photo"
+            android:layout_toRightOf="@+id/iv_augur_photo"
+            android:lines="2"
+            android:maxEms="8"
+            android:ellipsize="end"
+            android:text="@{bean.ATitle ?? @string/no_title}"
+            android:textColor="@color/blue_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_read_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_article_name"
+            android:layout_marginBottom="1dp"
+            android:layout_alignLeft="@+id/tv_article_name"
+            android:layout_alignStart="@+id/tv_article_name"
+            android:text="@{bean.AReadAmount+@string/read_count}"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_article_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_read_num"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_augur_photo"
+            android:layout_toRightOf="@+id/iv_augur_photo"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="@{bean.AContent}"
+            android:textSize="12sp" />
+
+        <!--<ImageView
+            android:id="@+id/iv_article_like"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_article_name"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/like_bg" />-->
+
+        <com.yinghai.a24divine_user.widget.LikeShape
+            android:id="@+id/iv_article_like"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_article_name"
+            android:layout_marginRight="10dp"
+            app:like_normalTyle="stroke"
+            app:like_selectColor="@color/primary"
+            app:like_text="@string/collect_success"
+            app:like_textSize="9dp" />
+    </RelativeLayout>
+</layout>

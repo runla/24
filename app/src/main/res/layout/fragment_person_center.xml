@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/fake_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/shape_toolbar_bg"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_toolbar_bg">
+
+            <ImageView
+                android:id="@+id/iv_message"
+                android:src="@mipmap/ic_message"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingRight="55dp"
+                android:layout_width="80dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/iv_user_photo"
+                android:layout_toStartOf="@+id/iv_user_photo"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                tools:text="用户姓名" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/ic_person" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <com.yinghai.a24divine_user.widget.NoteView
+                android:id="@+id/note_history"
+                android:layout_width="45dp"
+                android:layout_height="290dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:note_iamgeHeight="25dp"
+                app:note_imageSrc="@mipmap/ic_history"
+                app:note_marginHorizontal="10dp"
+                app:note_marginVertical="20dp"
+                app:note_textColor="@color/deepBlue"
+                app:note_textContent="@string/history"
+                app:note_textSize="20sp"
+                app:note_textToImage="10dp"
+                app:note_turn="top"/>
+
+            <com.yinghai.a24divine_user.widget.NoteView
+                android:id="@+id/note_collction"
+                android:layout_width="45dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:note_iamgeHeight="25dp"
+                app:note_imageSrc="@mipmap/ic_like"
+                app:note_marginHorizontal="10dp"
+                app:note_marginVertical="20dp"
+                app:note_textColor="@color/deepGreen"
+                app:note_textContent="@string/collection"
+                app:note_textSize="20sp"
+                app:note_textToImage="10dp"
+                app:note_turn="top"/>
+
+            <com.yinghai.a24divine_user.widget.NoteView
+                android:id="@+id/note_setting"
+                android:layout_width="45dp"
+                android:layout_height="370dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:note_iamgeHeight="25dp"
+                app:note_imageSrc="@mipmap/ic_setting"
+                app:note_marginHorizontal="10dp"
+                app:note_marginVertical="20dp"
+                app:note_textColor="@color/deepYellow"
+                app:note_textContent="@string/setting"
+                app:note_textSize="20sp"
+                app:note_textToImage="10dp"
+                app:note_turn="top"/>
+
+            <com.yinghai.a24divine_user.widget.NoteView
+                android:id="@+id/note_order"
+                android:layout_width="45dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:note_iamgeHeight="25dp"
+                app:note_imageSrc="@mipmap/ic_order"
+                app:note_marginHorizontal="10dp"
+                app:note_marginVertical="20dp"
+                app:note_textColor="@color/deepRed"
+                app:note_textContent="@string/order"
+                app:note_textSize="20sp"
+                app:note_textToImage="10dp"
+                app:note_turn="top" />
+
+            <com.yinghai.a24divine_user.widget.NoteView
+                android:id="@+id/note_friend"
+                android:layout_width="45dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:note_iamgeHeight="25dp"
+                app:note_imageSrc="@mipmap/ic_book"
+                app:note_marginHorizontal="10dp"
+                app:note_marginVertical="20dp"
+                app:note_textColor="@color/deepOrange"
+                app:note_textContent="@string/friend"
+                app:note_textSize="20sp"
+                app:note_textToImage="10dp"
+                app:note_turn="top"/>
+
+            <com.yinghai.a24divine_user.widget.NoteView
+                android:id="@+id/note_follow"
+                android:layout_width="45dp"
+                android:layout_height="320dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:note_iamgeHeight="25dp"
+                app:note_imageSrc="@mipmap/ic_follow"
+                app:note_marginHorizontal="10dp"
+                app:note_marginVertical="20dp"
+                app:note_textColor="@color/deepPurple"
+                app:note_textContent="@string/my_follow"
+                app:note_textSize="20sp"
+                app:note_textToImage="10dp"
+                app:note_turn="top"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

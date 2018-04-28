@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_half">
+
+    <RelativeLayout
+        android:id="@+id/popup_anima"
+        android:background="@drawable/shape_bg_border_conner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+      >
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:longClickable="true"
+            android:selectAllOnFocus="true"
+            android:background="@null"
+            android:textColor="@color/grey_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_publish"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/et_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/confirm"
+            android:textColor="@color/grey_dark"
+            android:background="@drawable/shape_bg_border_pink"
+            android:layout_width="60dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
